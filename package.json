@@ -1,0 +1,46 @@
+{
+  "name": "vuejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devBuild": "webpack --config build/webpack.config.dev.js",
+    "prodBuild": "webpack --config build/webpack.config.prod.js",
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "bootstrap": "^4.1.3",
+    "css-loader": "^2.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "fontawesome": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@checkit/checkit-application-bootstrapper": "^2.0.1",
+    "eslint": "^5.10.0",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2"
+  }
+}
