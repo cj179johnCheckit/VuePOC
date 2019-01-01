@@ -45,7 +45,27 @@ module.exports = {
         ]
       },
       {
+        test: /\.scss?$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.css?$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.styl(us)?$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'stylus-loader'
+        ]
+      },
+      {
         test: /\.js$/,
+        include: [ // use `include` vs `exclude` to white-list vs black-list
+          path.resolve(__dirname, "src"), // white-list your app source files
+          require.resolve("bootstrap-vue"), // white-list bootstrap-vue
+        ],
         use: 'babel-loader'
       }
     ]

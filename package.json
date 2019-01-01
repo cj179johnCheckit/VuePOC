@@ -28,6 +28,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "fontawesome": "^4.7.2",
     "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-loader": "^15.4.2",
@@ -39,7 +41,9 @@
   },
   "dependencies": {
     "@checkit/checkit-application-bootstrapper": "^2.0.1",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "eslint": "^5.10.0",
+    "style-loader": "^0.23.1",
     "vue": "^2.5.21",
     "vue-router": "^3.0.2"
   }
