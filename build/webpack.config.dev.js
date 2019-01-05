@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-
+console.log(path.posix.join('assets', 'img/[name].[hash:7].[ext]'));
 module.exports = {
   mode: 'development',
   entry: {
@@ -51,6 +51,14 @@ module.exports = {
       {
         test: /\.css?$/,
         loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 80,
+          name: ('assets/images/[name].[hash:7].[ext]')
+        }
       },
       {
         test: /\.styl(us)?$/,
