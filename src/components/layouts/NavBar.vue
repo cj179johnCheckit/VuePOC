@@ -3,15 +3,34 @@
     <div class="logo-container">
       <img id="nav-bar-logo" src="/assets/images/checkit-logo.svg" />
     </div>
-
     <b-nav vertical>
-      <b-nav-item href="#">Customers</b-nav-item>
-      <b-nav-item href="#">Hubs</b-nav-item>
+      <nav-item :items="items"></nav-item>
     </b-nav>
   </div>
 </template>
 <script>
-  export default {}
+  import { NavItem } from '../elements'
+  export default {
+    components: {
+      NavItem
+    },
+    data () {
+      return {
+        items: [
+          {
+            display: 'Customers',
+            href: 'customers',
+            active: false,
+          },
+          {
+            display: 'Hubs',
+            href: 'hubs',
+            active: false,
+          }
+        ]
+      };
+    }
+  }
 </script>
 <style lang="stylus">
   .logo-container

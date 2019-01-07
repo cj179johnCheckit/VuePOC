@@ -4,7 +4,6 @@ const webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-console.log(path.posix.join('assets', 'img/[name].[hash:7].[ext]'));
 module.exports = {
   mode: 'development',
   entry: {
