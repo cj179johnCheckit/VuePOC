@@ -20,8 +20,18 @@ export default {
 </script>
 
 <style lang="stylus">
-  li.active
-    background-color: #FFF;
+  li
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    font-weight: bold;
+
+    &.active
+      background-color: #FFF;
+      a
+        color: black;
+    a
+      color: white;
+
 </style>
 
 
