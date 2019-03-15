@@ -1,7 +1,5 @@
 <template>
-  <div>This is for Customers
-      {{customers}}
-  </div>
+  <div>This is sign in page</div>
 </template>
 
 <script>
@@ -18,6 +16,4 @@ export default {
 </script>
 
 <style>
-
 </style>
-
