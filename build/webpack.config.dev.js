@@ -18,6 +18,11 @@ module.exports = {
   devServer: {
     hot: true,
     port: 8999,
+    historyApiFallback: {
+      rewrites: [
+        { from: /.*/, to: path.posix.join('/build/dist/index.html') },
+      ],
+    },
     watchOptions: {
       poll: true
     }
